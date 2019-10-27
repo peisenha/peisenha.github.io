@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Personal Homepage'
+project = u''
 copyright = u'2016, Philipp Eisenhauer'
 author = u'Philipp Eisenhauer'
 
