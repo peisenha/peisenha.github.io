@@ -10,7 +10,7 @@ I am an economist studying the economics and econometrics of human capital inves
 
 **Research**
 
-Please see my `curriculum vitae <https://github.com/peisenha/curriculum_vitae/blob/master/dist/eisenhauer_cv.pdf>`_ for more details.
+Please see my `curriculum vitae <https://github.com/peisenha/peisenha.github.io/tree/master/material/eisenhauer-cv.pdf>`_ for more details.
 
 **Software**
 
