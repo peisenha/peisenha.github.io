@@ -1,4 +1,4 @@
-# Test site for Philipp
+# Philipp Eisenhauer's Personal site
 
 ## Instructions
 
