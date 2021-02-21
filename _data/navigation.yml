@@ -3,5 +3,5 @@ main:
     url: /
   - title: "Teaching"
     url: /teaching/
-  # - title: "Research"
-  #   url: /research/
+  - title: "Blog"
+    url: /blog/

@@ -161,6 +161,7 @@ footer:
 include:
   - .htaccess
   - _pages
+  - _posts
 
 exclude:
   - "*.sublime-project"
@@ -291,7 +292,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: false
-      toc: true
+      toc: false
   # _pages
   - scope:
       path: ""
