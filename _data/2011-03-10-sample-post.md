@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 title: Sample Post
 toc: true
-tags: [intro, jekyll]
+tags: [jekyll]
 ---
 
 
