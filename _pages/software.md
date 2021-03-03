@@ -3,7 +3,7 @@ layout: single
 author_profile: true
 title: Software
 permalink: "/software/"
-toc: true
+toc: false
 ---
 
 |
