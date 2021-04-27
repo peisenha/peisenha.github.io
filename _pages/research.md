@@ -14,7 +14,7 @@ The ex-ante evaluation of policies using structural microeconometric models is b
 
 **Collaborators:** Janos Gabler, Lena Janys
 
-### [Robust decision-making under risk and ambiguity](#)
+### [Robust decision-making under risk and ambiguity](https://arxiv.org/abs/2104.12573)
 
 Economists often estimate a subset of their model parameters outside the
 model and let the decision-makers inside the model treat these point estimates
