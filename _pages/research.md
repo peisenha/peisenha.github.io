@@ -32,7 +32,7 @@ ambiguity about the model's transition dynamics directly into account.
 
 Standard consumption utility is linked in time to a consumption event, whereas the timing of prosocial utility flows is ambiguous. Prosocial utility may depend on the actual utility consequences for others -- it is consequence-dated -- or it may be related to the act of giving and is thus choice-dated. Even though most prosocial decisions involve intertemporal trade-offs, existing models of other-regarding preferences abstract from the time signature of utility flows, limiting their explanatory scope. Building on a canonical intertemporal choice framework, we characterize the behavioral implications of the time structure of prosocial utility. We conduct a high-stakes donation experiment that allows us to identify non-parametrically and calibrate structurally the different motives from their unique time profiles. We find that the universe of our choice data can only be explained by a combination of choice- and consequence-dated prosocial utility. Both motives are pervasive and negatively correlated at the individual level.
 
-**Collaborators:** Felix Chopra, Armin Falk, Thomas W Graeber
+**Collaborators:** Felix Chopra, Armin Falk, Thomas Graeber
 
 ## Talks
 
