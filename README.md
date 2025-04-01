@@ -27,7 +27,7 @@ Experienced economist and statistician with a proven track record of delivering 
 
 ### Academia
 
-- **Philipp Eisenhauer**, Janoś Gabler, Lena Janys, and Christopher Walsh (2025).  
+- **Philipp Eisenhauer**, **Janoś Gabler**, **Lena Janys**, and **Christopher Walsh** (2025).  
   *[Structural Models for Policy-Making: Coping with Parametric Uncertainty](https://arxiv.org/abs/2103.01115)*  
   *International Economic Review* (2nd resubmission)
 
