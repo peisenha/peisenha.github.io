@@ -23,7 +23,7 @@ Experienced economist and statistician with a proven track record of delivering 
 
 ### Business
 
-* Eisenhauer, Philipp, Thomke, Stefan, & Sahni, Puneet. (2025). Inside Amazon’s AI Factory. Harvard Business Review. Accepted for publication, forthcoming.
+* **Eisenhauer, Philipp**, **Thomke, Stefan**, and **Sahni, Puneet**. (2025). Inside Amazon’s AI Factory. Harvard Business Review. Accepted for publication, forthcoming.
 
 ### Academia
 
