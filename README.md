@@ -55,3 +55,13 @@ Experienced economist and statistician with a proven track record of delivering 
 
 * **[Scientific Computing](https://ose-scientific-computing.readthedocs.io/en/latest/)**: Focuses on advanced scientific computing for economic modeling, covering numerical methods, software engineering practices, and high-performance computing. Includes guest lectures linking theory to real-world applications and career opportunities. Delivered in a cloud environment for scalable and reproducible project development.
 
+## Education
+
+**University of Bonn, Germany**: *Postdoctoral Scholar*  
+**2014 – 2019**
+
+**University of Chicago, IL**: *Postdoctoral Scholar*  
+**2013 – 2014**
+
+**University of Mannheim, Germany**: *Ph.D. in Economics*  
+**2006 – 2013**
