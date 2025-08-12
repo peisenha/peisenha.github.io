@@ -23,9 +23,9 @@ Experienced economist and statistician with a proven track record of delivering 
 
 ### Business
 
-* **Eisenhauer, Philipp**, **Thomke, Stefan**, and **Sahni, Puneet** (2025). Inside Amazon’s AI Factory. Harvard Business Review. Accepted for publication, forthcoming.
+* **Philipp Eisenhauer**, **Stefan Thomke**, and **Puneet Sahni** (2025). [Addressing Gen AI’s Quality-Control Problem](https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem). Harvard Business Review.
 
-* **Abraham Asfaw**, **Eisenhauer, Philipp**, and **Andrea Scarinci** (2024). [Evaluating the helpfulness of AI-enhanced catalogue data](https://www.amazon.science/blog/evaluating-the-helpfulness-of-ai-enhanced-catalogue-data). Amazon Science Blog. 
+* **Abraham Asfaw**, **Philipp Eisenhauer**, and **Andrea Scarinci** (2024). [Evaluating the Helpfulness of AI-enhanced Catalogue Data](https://www.amazon.science/blog/evaluating-the-helpfulness-of-ai-enhanced-catalogue-data). Amazon Science Blog. 
 
 ### Academia
 
