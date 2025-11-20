@@ -1,6 +1,14 @@
 # Philipp Eisenhauer
 
-Experienced economist and statistician with a proven track record of delivering and scaling high-impact science products. Skilled in enabling and leveraging causal impact measurements to drive both tactical and strategic business decisions. Currently working at the intersection of business, engineering, and science to solve ambiguous business challenges through a combination of scientific rigor, sound judgment, and strong communication.
+Experienced economist and statistician with a proven track record of delivering and scaling high-impact science products. Skilled in enabling and leveraging causal impact measurements to drive both tactical and strategic business decisions. Currently working at the intersection of business, engineering, and science to solve ambiguous challenges through a combination of scientific rigor, sound judgment, and strong communication.
+
+## Business Impact
+
+- **Impact API – Impact Measurement Toolkit:** Building a production-grade platform that exposes impact-measurement tooling and causal models through a unified API. Designed to embed standardized, experiment-backed evaluations directly into agentic workflows. Emphasizes automation, rigorous diagnostics, and broad adoption across business teams.
+
+- **Catalog AI – Causal Impact Framework:** Developed the causal impact measurement framework for Amazon’s Catalog AI initiative, leveraging randomized experiments to quantify the business value of product data improvements. Built production pipelines that measure customer impact, guide model development, and drive seller adoption with experiment-backed insights. Published in *Harvard Business Review*: [Inside Amazon’s AI Factory](https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem).
+
+- **Science-backed Decisions – Investment Evaluation Playbook:** Designed a standardized framework to evaluate the return on investment (ROI) of major tech initiatives by aligning assumptions across teams, validating inputs, and conducting sensitivity and scenario analyses. Established ongoing tracking processes that refine projections and feed ROI data into iterative improvements. Public write-up: *[Science-backed Decisions for High Stakes Investments Under Uncertainty](https://drive.google.com/file/d/1DZ056zC2d9W9oe0xOTxhk-i89MNtMl1J/view?usp=drive_link)*.
 
 ## Academic Appointments
 
@@ -23,7 +31,9 @@ Experienced economist and statistician with a proven track record of delivering 
 
 ### Business
 
-* **Philipp Eisenhauer**, **Stefan Thomke**, and **Puneet Sahni** (2025). [Addressing Gen AI’s Quality-Control Problem](https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem). Harvard Business Review.
+* **Eisenhauer, Philipp** (2025). [Science-backed Decisions for High Stakes Investments Under Uncertainty](https://drive.google.com/file/d/1DZ056zC2d9W9oe0xOTxhk-i89MNtMl1J/view?usp=drive_link). Working Paper.
+
+* **Eisenhauer, Philipp**, **Thomke, Stefan**, and **Sahni, Puneet** (2025). [Inside Amazon’s AI Factory](https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem). *Harvard Business Review*.
 
 * **Abraham Asfaw**, **Philipp Eisenhauer**, and **Andrea Scarinci** (2024). [Evaluating the Helpfulness of AI-enhanced Catalogue Data](https://www.amazon.science/blog/evaluating-the-helpfulness-of-ai-enhanced-catalogue-data). Amazon Science Blog. 
 
