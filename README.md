@@ -8,7 +8,7 @@ Experienced economist and statistician with a proven track record of delivering 
 
 - **Catalog AI – Causal Impact Framework:** Developed the causal impact measurement framework for Amazon’s Catalog AI initiative, leveraging randomized experiments to quantify the business value of product data improvements. Built production pipelines that measure customer impact, guide model development, and drive seller adoption with experiment-backed insights. Published in *Harvard Business Review*: [Inside Amazon’s AI Factory](https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem).
 
-- **Science-backed Decisions – Investment Evaluation Playbook:** Designed a standardized framework to evaluate the return on investment (ROI) of major tech initiatives by aligning assumptions across teams, validating inputs, and conducting sensitivity and scenario analyses. Established ongoing tracking processes that refine projections and feed ROI data into iterative improvements. Public write-up: *[Science-backed Decisions for High Stakes Investments Under Uncertainty](https://drive.google.com/file/d/1DZ056zC2d9W9oe0xOTxhk-i89MNtMl1J/view?usp=drive_link)*.
+- **Science-backed Decisions – Investment Evaluation Playbook:** Designed a standardized framework to evaluate the return on investment (ROI) of major tech initiatives by aligning assumptions across teams, validating inputs, and conducting sensitivity and scenario analyses. Established ongoing tracking processes that refine projections and feed ROI data into iterative improvements. Public write-up: *[Science-backed Decisions for High Stakes Investments Under Uncertainty](https://drive.google.com/file/d/1CKMycWC8GjvesSlbXN7aU8aDta0wMYog/view?usp=sharing)*.
 
 ## Academic Appointments
 
