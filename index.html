@@ -60,6 +60,17 @@
             gap: 30px;
             flex-wrap: wrap;
             justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li::before {
+            content: none;
         }
 
         nav a {
@@ -201,13 +212,13 @@
             line-height: 1.8;
         }
 
-        ul {
+        .content ul {
             margin-left: 0;
             margin-bottom: 25px;
             list-style: none;
         }
 
-        li {
+        .content li {
             margin-bottom: 20px;
             padding-left: 30px;
             position: relative;
@@ -215,7 +226,7 @@
             line-height: 1.8;
         }
 
-        li::before {
+        .content li::before {
             content: '▸';
             position: absolute;
             left: 0;
@@ -357,7 +368,7 @@
                 gap: 10px;
             }
 
-            li {
+            .content li {
                 padding-left: 25px;
             }
 
