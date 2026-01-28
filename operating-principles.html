@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Operating Principles - Philipp Eisenhauer's framework for building systems that turn insights into decisions at scale.">
+    <meta name="author" content="Philipp Eisenhauer">
+    <title>Operating Principles | Philipp Eisenhauer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-00JS1JND0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-00JS1JND0F');
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a365d;
+            --accent-color: #2c5282;
+            --text-color: #2d3748;
+            --text-light: #4a5568;
+            --background: #f7fafc;
+            --card-background: #ffffff;
+            --border-color: #e2e8f0;
+            --hover-color: #edf2f7;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-background);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            padding: 20px 60px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li::before {
+            content: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95em;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.3px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+        }
+
+        .content {
+            padding: 60px 80px 80px;
+        }
+
+        header {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid var(--border-color);
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        h1 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .epigraph {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 1.3em;
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .epigraph-author {
+            font-size: 0.95em;
+            color: var(--text-light);
+        }
+
+        h2 {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 2em;
+            font-weight: 600;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .principle-section {
+            margin-bottom: 40px;
+        }
+
+        .principle-content {
+            font-size: 1.1em;
+            color: var(--text-light);
+            line-height: 1.9;
+        }
+
+        .principle-content strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .principle-image {
+            display: block;
+            max-width: 320px;
+            margin: 30px auto;
+            border-radius: 8px;
+        }
+
+        .principle-section-flex {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .principle-section-flex .principle-image {
+            flex-shrink: 0;
+            max-width: 240px;
+            margin: 0;
+        }
+
+        .principle-section-flex .principle-content {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .principle-section-flex {
+                flex-direction: column;
+            }
+
+            .principle-section-flex .principle-image {
+                max-width: 200px;
+                margin: 0 auto 20px;
+            }
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background-color: var(--hover-color);
+            border-radius: 8px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .back-link:hover {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(44, 82, 130, 0.3);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            border-bottom-color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                border-radius: 8px;
+            }
+
+            nav {
+                padding: 15px 20px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 0.85em;
+                padding: 6px 12px;
+            }
+
+            .content {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+                margin-top: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .epigraph {
+                font-size: 1.1em;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#business-impact">Impact</a></li>
+                <li><a href="index.html#business-experience">Experience</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <header>
+                <h1>Operating Principles</h1>
+                <p class="epigraph">"The pleasure of finding things out."</p>
+                <p class="epigraph-author">— Richard Feynman</p>
+            </header>
+
+            <main>
+                <section class="principle-section">
+                    <h2>Foundation</h2>
+                    <p class="principle-content">
+                        Three traits drive everything I do. <strong>Curiosity</strong> is the drive to learn and understand — seeking out
+                        new challenges and unfamiliar territory. <strong>Action</strong> is the bias toward trying — start, experiment,
+                        learn from what happens. <strong>Rigor</strong> is the insistence on systematic feedback — actively seeking what
+                        could prove you wrong. These three reinforce each other. Curiosity asks questions, action explores answers, rigor
+                        filters what works. Together, they turn effort into results.
+                    </p>
+                </section>
+
+                <section class="principle-section">
+                    <h2>Iteration</h2>
+                    <div class="principle-section-flex">
+                        <img src="assets/learn-decide-repeat.svg" alt="Learn · Decide · Repeat cycle diagram" class="principle-image">
+                        <p class="principle-content">
+                            One principle unifies how I work: <strong>Learn · Decide · Repeat</strong>. Every cycle builds on the last.
+                            <em>Learn</em> means understanding how things actually work. <em>Decide</em> means acting despite remaining uncertainty.
+                            <em>Repeat</em> means feeding outcomes back into the next cycle. The faster you close the loop, the faster you compound what you know into what you do.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="principle-section">
+                    <h2>Leverage</h2>
+                    <p class="principle-content">
+                        Two mechanisms multiply my impact. <strong>Speed</strong> reduces cycle time — tighter feedback, less friction, automating what repeats. <strong>Scale</strong> increases reach — building systems that last, creating standards others can follow, turning expertise into tools. Speed without scale doesn't move the needle. Scale without speed doesn't learn fast enough. Together, they amplify learning into impact.
+                    </p>
+                </section>
+
+                <a href="index.html" class="back-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Home
+                </a>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
