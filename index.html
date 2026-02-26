@@ -45,7 +45,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             background-color: var(--card-background);
             border-radius: 12px;
@@ -325,6 +325,56 @@
             transform: translateX(4px);
         }
 
+        .featured-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .featured-card {
+            padding: 30px;
+            background-color: var(--hover-color);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transform: translateX(4px);
+        }
+
+        .featured-card h3 {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        .featured-card p {
+            flex: 1;
+        }
+
+        .featured-card .card-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .featured-card .card-badge {
+            display: inline-block;
+            font-size: 0.78em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 14px;
+        }
+
         strong {
             font-weight: 600;
             color: var(--text-color);
@@ -400,9 +450,13 @@
                 flex-direction: column;
                 gap: 10px;
             }
-            
+
             .social-link {
                 justify-content: center;
+            }
+
+            .featured-cards {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -433,8 +487,7 @@
         <nav>
             <ul>
                 <li><a href="#positioning">Positioning</a></li>
-                <li><a href="#showcase">Impact Engine</a></li>
-                <li><a href="#impact">Impact</a></li>
+                <li><a href="#showcase">Showcase</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#teaching">Teaching</a></li>
@@ -492,50 +545,35 @@
                 </section>
 
                 <section id="showcase">
-                    <h2>Impact Engine</h2>
-                    <p>
-                        I built <strong>Impact Engine</strong> to put the formula into practice — and to
-                        show what it looks like end to end. Organizations invest in dozens of
-                        initiatives but rarely know which ones actually moved the needle — Impact Engine
-                        closes that gap with a config-driven Python ecosystem that runs a full decision
-                        loop in a single call.
-                    </p>
-                    <p>
-                        It starts by <strong>measuring</strong> each initiative's causal impact with pluggable
-                        econometric models, then <strong>evaluating</strong> the strength of that evidence so weak
-                        estimates don't drive big bets. From there, it <strong>allocates</strong> budget across
-                        the full portfolio under uncertainty and <strong>scales</strong> the winners — feeding
-                        learnings back into the next cycle.
-                    </p>
-                    <p>
-                        Four independent Python packages, each with its own CI pipeline and release
-                        cycle, wired together by an orchestrator at runtime.
-                    </p>
-                    <p><a href="https://eisenhauerio.github.io/tools-impact-engine-website/" target="_blank">Explore the Impact Engine &rarr;</a></p>
-                </section>
-
-                <section id="impact">
-                    <h2>Impact</h2>
-                    <div class="bullet-section">
-                        <ul>
-                            <li>
-                                <strong>Catalog AI – Causal Impact Framework:</strong> Developed the causal impact measurement framework for
-                                Amazon's Catalog AI initiative, leveraging randomized experiments to quantify the business value of product
-                                data improvements. Built production pipelines that measure customer impact, guide model development, and drive
-                                seller adoption with experiment-backed insights. Published in <em>Harvard Business Review</em>:
-                                <a href="https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem" target="_blank">Inside Amazon's AI Factory</a>.
-                            </li>
-                            <li>
-                                <strong>Uncertain Decisions – Portfolio Allocation Framework:</strong> Designed a standardized framework
-                                to evaluate the return on investment (ROI) of major tech initiatives by aligning assumptions across teams,
-                                validating inputs, and conducting sensitivity and scenario analyses. Established ongoing tracking processes that
-                                refine projections and feed ROI data back into investment decisions through iterative refinement. Available as <em>Working Paper</em>:
-                                <a href="https://drive.google.com/file/d/1CKMycWC8GjvesSlbXN7aU8aDta0wMYog/view?usp=sharing" target="_blank">Science-backed
-                                Decisions for High Stakes Investments Under Uncertainty</a>.
-                            </li>
-                        </ul>
+                    <h2>Showcase</h2>
+                    <div class="featured-cards">
+                        <div class="featured-card">
+                            <span class="card-badge">Open Source</span>
+                            <h3>Impact Engine</h3>
+                            <p>
+                                A config-driven Python ecosystem that runs a full decision loop in a single call.
+                                It <strong>measures</strong> each initiative's causal impact, <strong>evaluates</strong>
+                                the strength of that evidence, <strong>allocates</strong> budget across the portfolio
+                                under uncertainty, and <strong>scales</strong> the winners — four independent packages,
+                                each with its own CI pipeline, wired by an orchestrator at runtime.
+                            </p>
+                            <a class="card-link" href="https://eisenhauerio.github.io/tools-impact-engine-website/" target="_blank">Explore the Impact Engine &rarr;</a>
+                        </div>
+                        <div class="featured-card">
+                            <span class="card-badge">Harvard Business Review</span>
+                            <h3>Inside Amazon's AI Factory</h3>
+                            <p>
+                                Published account of the causal impact measurement framework I developed for
+                                Amazon's Catalog AI initiative. Leveraging <strong>randomized experiments</strong> to quantify the
+                                business value of product data improvements, the framework powers <strong>production
+                                pipelines</strong> that measure customer impact, guide <strong>model development</strong>, and drive seller
+                                adoption with <strong>experiment-backed insights</strong>.
+                            </p>
+                            <a class="card-link" href="https://hbr.org/2025/09/addressing-gen-ais-quality-control-problem" target="_blank">Read in Harvard Business Review &rarr;</a>
+                        </div>
                     </div>
                 </section>
+
 
             <section id="experience">
                 <h2>Experience</h2>
