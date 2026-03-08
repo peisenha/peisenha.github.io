@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Operating Principles - Philipp Eisenhauer's framework for building systems that turn insights into decisions at scale.">
+    <meta name="description" content="Memos — short, opinionated write-ups on measurement, evidence, and decision systems.">
     <meta name="author" content="Philipp Eisenhauer">
-    <title>Operating Principles | Philipp Eisenhauer</title>
+    <title>Memos | Philipp Eisenhauer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -128,87 +128,39 @@
             letter-spacing: -0.5px;
         }
 
-        .epigraph {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 1.3em;
-            font-style: italic;
-            color: var(--text-light);
-            margin-bottom: 5px;
-        }
-
-        .epigraph-author {
-            font-size: 0.95em;
-            color: var(--text-light);
-        }
-
-        h2 {
-            font-family: 'Crimson Pro', Georgia, serif;
-            font-size: 2em;
-            font-weight: 600;
-            margin-top: 50px;
-            margin-bottom: 25px;
-            color: var(--primary-color);
-            position: relative;
-            padding-bottom: 15px;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-        }
-
-        .principle-section {
-            margin-bottom: 40px;
-        }
-
-        .principle-content {
+        .subtitle {
             font-size: 1.1em;
             color: var(--text-light);
-            line-height: 1.9;
+            line-height: 1.8;
         }
 
-        .principle-content strong {
-            color: var(--accent-color);
-            font-weight: 600;
-        }
-
-        .principle-image {
+        .memo-card {
             display: block;
-            max-width: 320px;
-            margin: 30px auto;
+            padding: 25px 30px;
+            background-color: var(--hover-color);
             border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            margin-bottom: 20px;
         }
 
-        .principle-section-flex {
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
+        .memo-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transform: translateX(4px);
+            border-bottom: none;
         }
 
-        .principle-section-flex .principle-image {
-            flex-shrink: 0;
-            max-width: 240px;
+        .memo-card h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--accent-color);
+        }
+
+        .memo-card p {
             margin: 0;
-        }
-
-        .principle-section-flex .principle-content {
-            flex: 1;
-        }
-
-        @media (max-width: 768px) {
-            .principle-section-flex {
-                flex-direction: column;
-            }
-
-            .principle-section-flex .principle-image {
-                max-width: 200px;
-                margin: 0 auto 20px;
-            }
+            color: var(--text-light);
         }
 
         .back-link {
@@ -276,11 +228,6 @@
             h1 {
                 font-size: 2.2em;
             }
-
-            h2 {
-                font-size: 1.6em;
-                margin-top: 40px;
-            }
         }
 
         @media (max-width: 480px) {
@@ -294,10 +241,6 @@
 
             h1 {
                 font-size: 1.8em;
-            }
-
-            .epigraph {
-                font-size: 1.1em;
             }
         }
 
@@ -322,48 +265,26 @@
         <nav>
             <ul>
                 <li><a href="index.html">Profile</a></li>
-                <li><a href="operating-principles.html" aria-current="page">Principles</a></li>
-                <li><a href="memos.html">Memos</a></li>
+                <li><a href="operating-principles.html">Principles</a></li>
+                <li><a href="memos.html" aria-current="page">Memos</a></li>
             </ul>
         </nav>
 
         <div class="content">
             <header>
-                <h1>Operating Principles</h1>
-                <p class="epigraph">"The pleasure of finding things out."</p>
-                <p class="epigraph-author">— Richard Feynman</p>
+                <h1>Memos</h1>
+                <p class="subtitle">
+                    Short, opinionated write-ups on topics that come up when building
+                    measurement and decision systems. Each memo addresses a general
+                    problem and uses concrete examples from production work.
+                </p>
             </header>
 
             <main>
-                <section class="principle-section">
-                    <h2>Foundation</h2>
-                    <p class="principle-content">
-                        Three traits drive everything I do. <strong>Curiosity</strong> is the drive to learn and understand — seeking out
-                        new challenges and unfamiliar territory. <strong>Action</strong> is the bias toward trying — start, experiment,
-                        learn from what happens. <strong>Rigor</strong> is the insistence on systematic feedback — actively seeking what
-                        could prove you wrong. These three reinforce each other. Curiosity asks questions, action explores answers, rigor
-                        filters what works. Together, they turn effort into results.
-                    </p>
-                </section>
-
-                <section class="principle-section">
-                    <h2>Iteration</h2>
-                    <div class="principle-section-flex">
-                        <img src="assets/learn-decide-repeat.svg" alt="Learn · Decide · Repeat cycle diagram" class="principle-image">
-                        <p class="principle-content">
-                            One principle unifies how I work: <strong>Learn · Decide · Repeat</strong>. Every cycle builds on the last.
-                            <em>Learn</em> means understanding how things actually work. <em>Decide</em> means acting despite remaining uncertainty.
-                            <em>Repeat</em> means feeding outcomes back into the next cycle. The faster you close the loop, the faster you compound what you know into what you do.
-                        </p>
-                    </div>
-                </section>
-
-                <section class="principle-section">
-                    <h2>Leverage</h2>
-                    <p class="principle-content">
-                        Two mechanisms multiply my impact. <strong>Speed</strong> reduces cycle time — tighter feedback, less friction, automating what repeats. <strong>Scale</strong> increases reach — building systems that last, creating standards others can follow, turning expertise into tools. Speed without scale doesn't move the needle. Scale without speed doesn't learn fast enough. Together, they amplify learning into impact.
-                    </p>
-                </section>
+                <a href="memos/validation.html" class="memo-card">
+                    <h3>Validation Strategy</h3>
+                    <p>How to validate a measurement system and its components end-to-end</p>
+                </a>
 
                 <a href="index.html" class="back-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
