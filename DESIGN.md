@@ -24,7 +24,7 @@ site/                          Deployable website directory
   memos.html                   "Can he go deep?"
     └── memos/validation.html  Individual memo pages
   styles.css                   Shared styles
-  assets/                      Images and SVG assets
+  assets/                      Images and SVG assets ({page}-{subject}.{ext})
 ```
 
 All pages are static HTML sharing one stylesheet. No build step, no templating engine.

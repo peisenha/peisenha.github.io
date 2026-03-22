@@ -27,7 +27,7 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
   - `memos.html` — memos index: links to individual memo pages
   - `memos/validation.html` — memo: Validation Strategy (placeholder)
   - `styles.css` — shared stylesheet across all pages
-  - `assets/` — images and SVG assets (headshot, diagrams)
+  - `assets/` — images and SVG assets (`{page}-{subject}.{ext}` naming)
 - `.github/workflows/deploy.yml` — GitHub Pages deployment workflow
 
 ## Verification
