@@ -6,8 +6,8 @@ typography, responsive breakpoints, content principles).
 ## Project overview
 
 Static personal website for Philipp Eisenhauer, hosted via GitHub Pages at
-peisenha.github.io. Three-page site covering professional profile, operating
-principles, and technical memos. Deployed to GitHub Pages via a deploy workflow.
+peisenha.github.io. Two-page site covering professional profile and operating
+principles. Deployed to GitHub Pages via a deploy workflow.
 
 ## Development setup
 
@@ -22,10 +22,8 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 ## Architecture
 
 - `site/` — deployable website directory (published to GitHub Pages)
-  - `index.html` — profile page: header, positioning, showcase, experience, publications, teaching, education
+  - `index.html` — home page: header, positioning, showcase, experience, publications, teaching, education
   - `operating-principles.html` — operating principles: foundation, iteration (Learn/Decide/Repeat), leverage
-  - `memos.html` — memos index: links to individual memo pages
-  - `memos/validation.html` — memo: Validation Strategy (placeholder)
   - `styles.css` — shared stylesheet across all pages
   - `assets/` — images and SVG assets (`{page}-{subject}.{ext}` naming)
 - `.github/workflows/deploy.yml` — GitHub Pages deployment workflow
@@ -48,7 +46,7 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 
 ### Navigation
 
-`Profile` / `Principles` / `Memos` — consistent across all pages.
+`Home` / `Principles` — consistent across all pages.
 
 ### Page structure
 
@@ -62,9 +60,8 @@ All pages follow the same skeleton:
 
 | Page | Sections |
 |------|----------|
-| Profile (index.html) | Science × Engineering × Decision / Showcase / Experience / Publications / Teaching / Education |
+| Home (index.html) | Science × Engineering × Decision / Showcase / Experience / Publications / Education |
 | Principles | Foundation / Iteration / Leverage |
-| Memos | (card list, no h2 sections) |
 
 ### Showcase cards (index.html)
 
