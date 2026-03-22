@@ -1,4 +1,4 @@
-# Design: Personal Website Information Architecture
+# Design: Personal Website
 
 ## Motivation
 
