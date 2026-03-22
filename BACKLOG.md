@@ -55,14 +55,16 @@ principles page.
 
 ## Phase 3 — Technical Improvements
 
-**Status**: planned
+**Status**: complete
 
 ### Goal
 
-Extract shared CSS and improve maintainability.
+Extract shared CSS, move HTML into `site/` directory, and add CI deploy workflow
+to match the Impact Engine website structure.
 
 ### Key changes
 
-- Extract inline CSS into a shared stylesheet (`assets/style.css`)
-- Ensure all pages reference the shared stylesheet
-- Verify responsive breakpoints still work across all pages
+- Moved HTML files and assets into `site/` directory
+- Extracted inline CSS into `site/styles.css`
+- Added `.github/workflows/deploy.yml` for GitHub Pages deployment
+- Added `aria-current="page"` to active nav links
