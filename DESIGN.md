@@ -12,8 +12,8 @@ reveals how he thinks, and the memos page demonstrates depth on specific topics.
 ```
 site/                          Deployable website directory
   index.html                   "Who is this person and why should I care?"
-    ├── Positioning            Science × Engineering × Decision formula
-    ├── Showcase               Three flagship items (Science / Engineering / Decision)
+    ├── Positioning            Science × Engineering × Judgment formula
+    ├── Showcase               Three flagship items (Science / Engineering / Judgment)
     ├── Experience             Career timeline with results
     ├── Publications           Business + Academic tracks
     └── Teaching               Course portfolio
@@ -52,7 +52,7 @@ No hierarchy beyond the memos index linking to individual memo pages.
 ## Future directions
 
 - **Audience-aware entry points** — the three showcase cards (Science / Engineering /
-  Decision) could serve as distinct landing paths for different audiences
+  Judgment) could serve as distinct landing paths for different audiences
 - **Memo expansion** — populate the validation memo and add additional memos on
   topics like experimentation design, portfolio allocation, or evidence quality
 - **Current work signal** — add a "currently working on" section to signal activity

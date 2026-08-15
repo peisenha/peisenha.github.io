@@ -60,7 +60,7 @@ All pages follow the same skeleton:
 
 | Page | Sections |
 |------|----------|
-| Home (index.html) | Science × Engineering × Decision / Showcase / Experience / Publications / Education |
+| Home (index.html) | Science × Engineering × Judgment / Showcase / Experience / Publications / Education |
 | Principles | Foundation / Iteration / Leverage |
 
 ### Showcase cards (index.html)
@@ -69,4 +69,4 @@ Three cards with badge labels matching the positioning formula:
 
 - **Science** — Structural Models for Policy-Making
 - **Engineering** — Impact Engine
-- **Decision** — Inside Amazon's AI Factory
+- **Judgment** — Inside Amazon's AI Factory
