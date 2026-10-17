@@ -69,4 +69,4 @@ Three cards with badge labels matching the positioning formula:
 
 - **Science** — Structural Models for Policy-Making
 - **Engineering** — Impact Engine
-- **Judgment** — Inside Amazon's AI Factory
+- **Judgment** — Addressing Gen AI's Quality-Control Problem
