@@ -22,7 +22,7 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 ## Architecture
 
 - `site/` — deployable website directory (published to GitHub Pages)
-  - `index.html` — home page: header, positioning, showcase, experience, publications, teaching, education
+  - `index.html` — home page: header, positioning, showcase (incl. teaching), speaking, experience, publications
   - `operating-principles.html` — operating principles: foundation, iteration (Learn/Decide/Repeat), leverage
   - `styles.css` — shared stylesheet across all pages
   - `assets/` — images and SVG assets (`{page}-{subject}.{ext}` naming)
@@ -37,8 +37,9 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 
 ## Key conventions
 
-- Pure static HTML/CSS — no build tools, no frameworks, no JavaScript
-- All pages share the same nav (Profile / Principles / Memos), font stack, and `styles.css`
+- Pure static HTML/CSS — no build tools, no frameworks, no JavaScript beyond the analytics snippet
+- No inline styles; every look lives in `styles.css`
+- All pages share the same nav (Home / Principles), font stack, and `styles.css`
 - Google Analytics — gtag snippet (G-00JS1JND0F) included in every page's `<head>`
 - Active nav link uses `aria-current="page"`
 
@@ -52,7 +53,7 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 
 All pages follow the same skeleton:
 
-1. `<nav>` — sticky gradient bar with three links
+1. `<nav>` — sticky gradient bar with two links
 2. `<div class="content">` → `<header>` (title + optional subtitle/epigraph) → `<main>`
 3. `<header>` has bottom border with 120px accent gradient overlay
 
@@ -60,13 +61,19 @@ All pages follow the same skeleton:
 
 | Page | Sections |
 |------|----------|
-| Home (index.html) | Science × Engineering × Judgment / Showcase / Speaking / Experience / Publications / Education |
+| Home (index.html) | Science × Engineering × Judgment / Showcase / Speaking / Experience / Publications |
 | Principles | Foundation / Iteration / Leverage |
 
 ### Showcase cards (index.html)
 
-Three cards with badge labels matching the positioning formula:
+Three cards with badge labels matching the positioning formula, followed by a
+transition paragraph and a **Teaching** card (Impact-Driven Business Decisions):
 
 - **Science** — Structural Models for Policy-Making
 - **Engineering** — Impact Engine
 - **Judgment** — Addressing Gen AI's Quality-Control Problem
+
+### Speaking (index.html)
+
+One card per talk topic (`Talk` badge, topic title, short narrative). Add a card only for a
+new argument; new venues for an existing talk do not change the site.

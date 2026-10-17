@@ -3,6 +3,6 @@
 ## Current state
 
 Two-page static site is live at peisenha.github.io. Home page has positioning
-(Science/Engineering/Judgment/Impact formula), showcase cards, experience,
-publications, and teaching. Principles page covers Foundation, Iteration,
-and Leverage.
+(Science/Engineering/Judgment/Impact formula), showcase cards (including
+teaching), speaking, experience, and publications. Principles page covers
+Foundation, Iteration, and Leverage.

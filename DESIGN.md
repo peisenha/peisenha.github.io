@@ -4,8 +4,8 @@
 
 The site serves as Philipp's public-facing professional presence — the place where hiring
 managers, academics, business decision-makers, and students form their first impression.
-Each page has a distinct job: the profile page establishes credibility, the principles page
-reveals how he thinks, and the memos page demonstrates depth on specific topics.
+Each page has a distinct job: the profile page establishes credibility, and the principles
+page reveals how he thinks.
 
 ## Architecture overview
 
@@ -13,16 +13,15 @@ reveals how he thinks, and the memos page demonstrates depth on specific topics.
 site/                          Deployable website directory
   index.html                   "Who is this person and why should I care?"
     ├── Positioning            Science × Engineering × Judgment formula
-    ├── Showcase               Three flagship items (Science / Engineering / Judgment)
+    ├── Showcase               Three flagship items (Science / Engineering / Judgment),
+    │                          then a transition paragraph and the Teaching card
+    ├── Speaking               One card per talk topic
     ├── Experience             Career timeline with results
-    ├── Publications           Business + Academic tracks
-    └── Teaching               Course portfolio
+    └── Publications           Business, Press, and Academia
   operating-principles.html    "How does he think?"
     ├── Foundation             Curiosity, Action, Rigor
     ├── Iteration              Learn · Decide · Repeat cycle
     └── Leverage               Speed × Scale
-  memos.html                   "Can he go deep?"
-    └── memos/validation.html  Individual memo pages
   styles.css                   Shared styles
   assets/                      Images and SVG assets ({page}-{subject}.{ext})
 ```
@@ -36,10 +35,15 @@ The site deploys to GitHub Pages on push to main.
 |------|------|
 | `site/index.html` | Profile — first impression, credibility, breadth of work |
 | `site/operating-principles.html` | Principles — thinking framework, distinguishes from generic profiles |
-| `site/memos.html` | Memos index — signals depth and writing ability |
-| `site/memos/*.html` | Individual memos — standalone technical write-ups |
 | `site/styles.css` | Full stylesheet: layout, typography, cards, responsive breakpoints |
 | `.github/workflows/deploy.yml` | GitHub Pages deployment workflow |
+
+### Speaking
+
+One card per talk topic, not per venue, so the section grows only when the argument
+does. A card reuses the showcase card style: a `Talk` badge, the topic as title, and a
+short narrative of what the talk argues. No slides and no venue list; the work the
+talk draws on is linked from the showcase above it.
 
 ## Data flow
 
@@ -47,13 +51,12 @@ Static site — no runtime data flow. Content is authored directly in HTML. The 
 dynamic element is Google Analytics (gtag.js) sending pageview events.
 
 Navigation is flat: every page links to every other page via the shared `<nav>` bar.
-No hierarchy beyond the memos index linking to individual memo pages.
 
 ## Future directions
 
 - **Audience-aware entry points** — the three showcase cards (Science / Engineering /
   Judgment) could serve as distinct landing paths for different audiences
-- **Memo expansion** — populate the validation memo and add additional memos on
-  topics like experimentation design, portfolio allocation, or evidence quality
+- **Memos** — a page of standalone write-ups (e.g. experimentation design, portfolio
+  allocation, evidence quality) to signal depth
 - **Current work signal** — add a "currently working on" section to signal activity
   and currency

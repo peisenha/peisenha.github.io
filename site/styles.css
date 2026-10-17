@@ -264,6 +264,14 @@ a:hover {
     font-weight: 300;
 }
 
+.tagline-lead {
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
 /* Epigraph (quote under page title) */
 
 .epigraph {
