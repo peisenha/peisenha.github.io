@@ -19,7 +19,7 @@ site/                          Deployable website directory
     ├── Experience             Career timeline with results
     └── Publications           Business, Press, and Academia
   operating-principles.html    "How does he think?"
-    ├── Foundation             Curiosity, Action, Rigor
+    ├── Foundation             Curiosity, Action, Rigor, rooted in joy
     ├── Iteration              Learn · Decide · Repeat cycle
     └── Leverage               Speed × Scale
   styles.css                   Shared styles
