@@ -60,7 +60,7 @@ All pages follow the same skeleton:
 
 | Page | Sections |
 |------|----------|
-| Home (index.html) | Science × Engineering × Judgment / Showcase / Experience / Publications / Education |
+| Home (index.html) | Science × Engineering × Judgment / Showcase / Speaking / Experience / Publications / Education |
 | Principles | Foundation / Iteration / Leverage |
 
 ### Showcase cards (index.html)
