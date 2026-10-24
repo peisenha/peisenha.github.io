@@ -1,7 +1,8 @@
 # CLAUDE.md
 
-Shared conventions: see `../GUIDELINES.md` for cross-site standards (design tokens,
-typography, responsive breakpoints, content principles).
+Shared conventions: `GUIDELINES.md` in this repo holds the cross-site standards for every
+site under `websites/` (design tokens, typography, responsive breakpoints, content principles).
+Changing it changes all of them.
 
 ## Project overview
 
