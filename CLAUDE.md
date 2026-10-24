@@ -40,8 +40,7 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 - Pure static HTML/CSS — no build tools, no frameworks, no JavaScript beyond the analytics snippet
 - No inline styles; every look lives in `styles.css`
 - All pages share the same nav (Home / Principles), font stack, and `styles.css`
-- Google Analytics — gtag snippet (G-00JS1JND0F) included in every page's `<head>`
-- Active nav link uses `aria-current="page"`
+- Google Analytics ID: G-00JS1JND0F
 
 ## Cross-page structure (MUST maintain symmetry)
 
@@ -51,17 +50,13 @@ automatically on push to main via `.github/workflows/deploy.yml` (publishes `sit
 
 ### Page structure
 
-All pages follow the same skeleton:
-
-1. `<nav>` — sticky gradient bar with two links
-2. `<div class="content">` → `<header>` (title + optional subtitle/epigraph) → `<main>`
-3. `<header>` has bottom border with 120px accent gradient overlay
+The shared skeleton from `../GUIDELINES.md`; the `<header>` bottom border carries a 120px accent gradient overlay.
 
 ### Section headings
 
 | Page | Sections |
 |------|----------|
-| Home (index.html) | Science × Engineering × Judgment / Showcase / Speaking / Experience / Publications |
+| Home (index.html) | Science × Engineering × Judgment = Impact / Showcase / Speaking / Experience / Publications |
 | Principles | Foundation / Iteration / Leverage |
 
 ### Showcase cards (index.html)
